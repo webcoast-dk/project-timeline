@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="Labels.xlf" source-language="en" date="2024-10-01T12:15:14+00:00">
+        <header />
+        <body>
+            <trans-unit id="title" resname="title">
+                <source>Customer</source>
+            </trans-unit>
+            <trans-unit id="name.label">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="public_name.label">
+                <source>Public name</source>
+            </trans-unit>
+            <trans-unit id="public_name.description">
+                <source>Overwrites "name", if set. Use to hide real customer name to honor non-disclosure agreements.</source>
+            </trans-unit>
+            <trans-unit id="city.label">
+                <source>City</source>
+            </trans-unit>
+            <trans-unit id="region.label">
+                <source>Region</source>
+            </trans-unit>
+            <trans-unit id="country.label">
+                <source>Country</source>
+            </trans-unit>
+            <trans-unit id="contact.label">
+                <source>Contact</source>
+            </trans-unit>
+            <trans-unit id="email.label">
+                <source>Email</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

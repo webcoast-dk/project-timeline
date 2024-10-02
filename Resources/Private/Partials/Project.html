@@ -1,0 +1,24 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<li class="project">
+    <div class="project__dates">
+        <f:variable name="startDate" value="{project.startDate -> f:format.date(pattern: 'MM/YYYY')}" />
+        <f:variable name="endDate" value="{f:if(condition: '{project.endDate}', then: '{project.endDate -> f:format.date(pattern: \'MM/YYYY\')}', else: '')}" />
+        <span class="project__date">{startDate}</span>
+        <f:if condition="{startDate} != {endDate}">
+            <span class="project__date-separator">-</span>
+            <span class="project__date"><f:if condition="{endDate}"><f:then>{endDate}</f:then><f:else><f:translate id="project.date.today" /></f:else></f:if></span>
+        </f:if>
+    </div>
+    <h2 class="project__title">{project.publicTitle ? project.publicTitle : project.title}</h2>
+    <span class="project__customer">{project.customer.publicName ? project.customer.publicName : project.customer.name}</span>
+    <span class="project__location">{project.customer.location -> f:join(separator: ', ')}</span>
+    <div class="project__description">
+        {project.description -> f:format.html()}
+    </div>
+    <div class="project__tags">
+        <f:for each="{project.tags}" as="tag">
+            <span class="project__tag">{tag.name}</span>
+        </f:for>
+    </div>
+</li>
+</html>

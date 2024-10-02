@@ -1,0 +1,21 @@
+name: projecttimeline/tag
+table: tx_projecttimeline_domain_model_tag
+title: Tag
+prefixFields: false
+labelField: name
+restrictions:
+   disabled: true
+   startTime: true
+   endTime: true
+sortable: false
+sortField:
+   -  identifier: name
+      order: ASC
+security:
+   ignorePageTypeRestriction: true
+hideAtCopy: true
+fields:
+   -  identifier: name
+      type: Text
+      label: Name
+      required: true

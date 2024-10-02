@@ -1,0 +1,57 @@
+name: projecttimeline/project
+table: tx_projecttimeline_domain_model_project
+title: Project
+prefixFields: false
+labelField: [title, public_title]
+restrictions:
+   disabled: true
+   startTime: true
+   endTime: true
+sortable: false
+sortField:
+   -  identifier: start_date
+      order: desc
+security:
+   ignorePageTypeRestriction: true
+hideAtCopy: true
+fields:
+   -  identifier: title
+      type: Text
+      label: Title
+      required: true
+   -  identifier: public_title
+      type: Text
+      label: Public title
+   -  identifier: description
+      type: Textarea
+      label: Description
+      enableRichtext: true
+      required: true
+   -  identifier: start_date
+      type: DateTime
+      label: Start Date
+      format: date
+      dbType: date
+      required: true
+   -  identifier: end_date
+      type: DateTime
+      label: End Date
+      format: date
+      dbType: date
+   -  identifier: customer
+      type: Select
+      required: true
+      renderType: selectMultipleSideBySide
+      label: Customer
+      foreign_table: tx_projecttimeline_domain_model_customer
+      foreign_table_where: ORDER BY tx_projecttimeline_domain_model_customer.company
+      maxitems: 1
+   -  identifier: tags
+      type: Select
+      required: true
+      renderType: selectMultipleSideBySide
+      label: Tags
+      foreign_table: tx_projecttimeline_domain_model_tag
+      foreign_table_where: ORDER BY tx_projecttimeline_domain_model_tag.name
+      MM: tx_projecttimeline_project_tag_mm
+      maxitems: 999

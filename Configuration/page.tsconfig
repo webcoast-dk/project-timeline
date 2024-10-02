@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+    elements {
+        project_timeline {
+            title = LLL:EXT:project_timeline/Resources/Private/Language/locallang_backend.xlf:plugin.main.title
+            description = LLL:EXT:project_timeline/Resources/Private/Language/locallang_backend.xlf:plugin.main.description
+            iconIdentifier = ext-project_timeline-wizard-icon
+            tt_content_defValues {
+                CType = projecttimeline_main
+            }
+        }
+    }
+    show := addToList(project_timeline)
+}

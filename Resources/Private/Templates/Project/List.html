@@ -1,0 +1,9 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="projects">
+    <ul class="projects__list">
+        <f:for each="{projects}" as="project">
+            <f:render partial="Project" arguments="{_all}" />
+        </f:for>
+    </ul>
+</div>
+</html>

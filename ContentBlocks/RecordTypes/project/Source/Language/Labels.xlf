@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="Labels.xlf" source-language="en" date="2024-10-01T12:15:36+00:00">
+        <header />
+        <body>
+            <trans-unit id="title">
+                <source>Project</source>
+            </trans-unit>
+            <trans-unit id="title.label">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="public_title.label">
+                <source>Public title</source>
+            </trans-unit>
+            <trans-unit id="public_title.description">
+                <source>Overwrites "title", if set. Use to hide real title to honor non-disclosure agreement.</source>
+            </trans-unit>
+            <trans-unit id="description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="start_date.label">
+                <source>Start date</source>
+            </trans-unit>
+            <trans-unit id="end_date.label">
+                <source>End date</source>
+            </trans-unit>
+            <trans-unit id="customer.label">
+                <source>Customer</source>
+            </trans-unit>
+            <trans-unit id="customer.description">
+                <source>You can only choose one customer</source>
+            </trans-unit>
+            <trans-unit id="tags.label">
+                <source>Tags</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

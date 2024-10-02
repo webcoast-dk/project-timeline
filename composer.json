@@ -1,0 +1,33 @@
+{
+    "name": "webcoast/project-timeline",
+    "description": "TYPO3 CMS extension to display project history, e.g. for freelancers",
+    "keywords": ["TYPO3", "CMS", "extension", "project", "history", "timeline", "freelancer"],
+    "type": "typo3-cms-extension",
+    "minimum-stability": "dev",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Thorben Nissen",
+            "email": "thorben@webcoast.dk"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^12.4",
+        "typo3/cms-extbase": "^12.4",
+        "typo3/cms-fluid": "^12.4",
+        "contentblocks/content-blocks": "^0.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "WEBcoast\\ProjectTimeline\\": "Classes/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        },
+        "typo3/cms": {
+            "extension-key": "project_timeline"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+name: projecttimeline/customer
+table: tx_projecttimeline_domain_model_customer
+title: Customer
+prefixFields: false
+labelField: [name, public_name]
+restrictions:
+   disabled: true
+   startTime: true
+   endTime: true
+sortable: false
+sortField:
+   -  identifier: company
+      order: ASC
+security:
+   ignorePageTypeRestriction: true
+hideAtCopy: true
+fields:
+   -  identifier: name
+      type: Text
+      label: Company
+      required: true
+   -  identifier: public_name
+      type: Text
+      label: Public name
+   -  identifier: city
+      type: Text
+      label: City
+   -  identifier: region
+      type: Text
+      label: Region
+   -  identifier: country
+      type: Text
+      label: Country
+   -  identifier: contact
+      type: Text
+      label: Contact
+   -  identifier: email
+      type: Email
+      label: Email
