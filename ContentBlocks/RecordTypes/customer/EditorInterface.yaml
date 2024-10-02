@@ -9,7 +9,7 @@ restrictions:
    endTime: true
 sortable: false
 sortField:
-   -  identifier: company
+   -  identifier: name
       order: ASC
 security:
    ignorePageTypeRestriction: true
