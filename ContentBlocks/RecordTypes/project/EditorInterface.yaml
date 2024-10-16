@@ -47,6 +47,7 @@ fields:
       label: Customer
       foreign_table: tx_projecttimeline_domain_model_customer
       foreign_table_where: tx_projecttimeline_domain_model_customer.sys_language_uid IN (0, -1) ORDER BY tx_projecttimeline_domain_model_customer.name
+      minitems: 1
       maxitems: 1
       l10n_mode: exclude
    -  identifier: tags
